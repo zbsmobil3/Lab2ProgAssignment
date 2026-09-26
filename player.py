@@ -3,10 +3,10 @@
 from coin import Coin
 
 class Player:
-    def __init__(name):
-        name.__name=name
-        name.__wallet=20
-        name.coin=Coin()
+    def __init__(self,name):
+        self.__name=name
+        self.__wallet=20
+        self.coin=Coin()
     
     def toss_coin():
         Coin.toss()
@@ -14,14 +14,14 @@ class Player:
     def get_coin_side():
         return Coin.get_sideup
 
-    def win_coin(name):
-        name.__wallet +=1
+    def win_coin(self):
+        self.__wallet +=1
 
-    def lose_coin(name):
-        name.__wallet -=1
+    def lose_coin(self):
+        self.__wallet -=1
 
-    def get_wallet(name):
-        return name.__wallet
+    def get_wallet(self):
+        return self.__wallet
 
-    def get_name(name):
-        return name.__name
+    def get_name(self):
+        return self.__name
