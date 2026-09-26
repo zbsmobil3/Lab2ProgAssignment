@@ -3,8 +3,8 @@
 from random import * #Would this count as starting code?
 
 class Coin:
-    def __init__(self, __sideup):
-        self.__sideup = __sideup
+    def __init__(self):
+        self.__sideup = 'none'
     def toss(self):
         a=randint(0,1)
         if a == 0:
