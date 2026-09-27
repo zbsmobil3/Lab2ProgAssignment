@@ -8,11 +8,11 @@ class Player:
         self.__wallet=20
         self.coin=Coin()
     
-    def toss_coin():
-        Coin.toss()
+    def toss_coin(self):
+        self.coin.toss()
 
-    def get_coin_side():
-        return Coin.get_sideup
+    def get_coin_side(self):
+        return (self.coin.get_sideup())
 
     def win_coin(self):
         self.__wallet +=1
