@@ -2,6 +2,7 @@
 from player import Player
 
 def main():
+    """The Core loop for the game"""
     player1=Player("Player2")
     player2=Player("Player2")
     userInput=""
